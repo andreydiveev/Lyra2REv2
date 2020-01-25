@@ -3,5 +3,6 @@ services:
   lyra2v2:
     build: .
     volumes:
+    - ./src:/usr/local/src/lyra2v2
     - ./release:/usr/local/src/lyra2v2/bin
     command: bash -c "make install-strip && sleep infinity"

@@ -1,3 +1,7 @@
 src/*.o
+<<<<<<< Updated upstream
+=======
+src/prog
+>>>>>>> Stashed changes
 src/bin/prog
 release/
