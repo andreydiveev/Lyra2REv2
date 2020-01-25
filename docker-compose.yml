@@ -1,0 +1,5 @@
+version: "3"
+services:
+  lyra2v2:
+    build: .
+    command: sleep infinity
