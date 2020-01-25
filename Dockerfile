@@ -14,3 +14,5 @@ COPY src /usr/local/src/lyra2v2
 
 WORKDIR /usr/local/src/lyra2v2
 
+RUN make
+

@@ -16,7 +16,7 @@ SOURCES=prog.cpp\
         sha3/sph_skein.c\
 
 OBJECTS=$(SOURCES:.cpp=.o)
-OUTPUT=bin/prog
+OUTPUT=prog
 
 all: $(SOURCES) $(OUTPUT)
 
@@ -32,8 +32,8 @@ $(OUTPUT): $(OBJECTS)
 clean:
 	rm -f *.o
 
-install: clean all
+install-strip: clean all
 	strip -s prog
 	cp prog /usr/local/bin/
-	cp prog ./bin/
+	cp prog ./bin/prog
 
